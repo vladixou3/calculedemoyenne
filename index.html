@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div class="class1">
+	<h1>Bienvenue !</h1>
+</div class="hehe">
+	<p class="p1">Entrer toute les notes de l'eleve</p>
+</div>
+<div>
+<p>Français :</p>	<input type="number" id="int1" value=10>
+<p>Mathematique :</p>	<input type="number" id="int2" value=10>
+<p>Art Plastique</p>	<input type="number" id="int3" value="10">
+<p>Education musicale :</p>	<input type="number" id="int4" value=10>
+<p>Anglais :</p>	<input type="number" id="int5" value=10>
+<p>Espagnole :</p>	<input type="number" id="int6" value=10>
+<p>Technonologie :</p>	<input type="number" id="int7" value=10>
+<p>SVT :</p>	<input type="number" id="int8" value=10>
+<p>Éducation physique et sportive :</p>	<input type="number" id="int9" value=10>
+<p>Histoire-Geo :</p> <input type="number" id="hist" value=10>
+<button onclick="Calculedemo()">Calculer la moyenne de l'eleve</button>
+<p id="result" name="resultas"></p>
+</div>
+<a href="index1.htm" target="_BLANK">Pour ce qui on allemand.</a>
+</body>
+<script>
+alert("A utiliser que en fin d'année pour avoir toute les notes.")
+function Calculedemo () {
+	let a = parseInt(int1.value);
+	let b = parseInt(int2.value);
+	let c = parseInt(int3.value);
+	let d = parseInt(int4.value);
+	let e = parseInt(int5.value);
+	let f = parseInt(int6.value);
+	let g = parseInt(int7.value);
+	let h = parseInt(int8.value);
+	let i = parseInt(int9.value);
+	let j = parseInt(hist.value);
+	let calcuuuul = Math.round((a+b+c+d+e+f+g+h+i+j)) / 10;
+	result.innerHTML = calcuuuul;
+}
+
+</script>
+</html>
